@@ -9,7 +9,7 @@ void aux_help_env(void)
 	char *help = "env: env [option] [name=value] [command [args]]\n\t";
 
 	write(STDOUT_FILENO, help, _strlen(help));
-	help = "Print the enviroment of the shell.\n";
+	help = "Print the current enviroment of the shell.\n";
 	write(STDOUT_FILENO, help, _strlen(help));
 
 }
@@ -25,7 +25,7 @@ void aux_help_setenv(void)
 	write(STDOUT_FILENO, help, _strlen(help));
 	help = "int replace)\n\t";
 	write(STDOUT_FILENO, help, _strlen(help));
-	help = "Add a new definition to the environment\n";
+	help = "Add a new definition to the environment of the shell\n";
 	write(STDOUT_FILENO, help, _strlen(help));
 }
 /**
@@ -37,7 +37,7 @@ void aux_help_unsetenv(void)
 	char *help = "unsetenv: unsetenv (const char *name)\n\t";
 
 	write(STDOUT_FILENO, help, _strlen(help));
-	help = "Remove an entry completely from the environment\n";
+	help = "Totally remove an entry from the environment\n";
 	write(STDOUT_FILENO, help, _strlen(help));
 }
 
@@ -48,12 +48,12 @@ void aux_help_unsetenv(void)
  */
 void aux_help_general(void)
 {
-	char *help = "^-^ bash, version 1.0(1)-release\n";
+	char *help = "^-^ bash, version 1.0 - release\n";
 
 	write(STDOUT_FILENO, help, _strlen(help));
-	help = "These commands are defined internally.Type 'help' to see the list";
+	help = "These commands are internally defined. Type 'help' to view the list of commands";
 	write(STDOUT_FILENO, help, _strlen(help));
-	help = "Type 'help name' to find out more about the function 'name'.\n\n ";
+	help = "Type 'help name' to learn more about the function 'name'.\n\n ";
 	write(STDOUT_FILENO, help, _strlen(help));
 	help = " alias: alias [name=['string']]\n cd: cd [-L|[-P [-e]] [-@]] ";
 	write(STDOUT_FILENO, help, _strlen(help));
@@ -73,8 +73,8 @@ void aux_help_exit(void)
 	char *help = "exit: exit [n]\n Exit shell.\n";
 
 	write(STDOUT_FILENO, help, _strlen(help));
-	help = "Exits the shell with a status of N. If N is ommited, the exit";
+	help = "Exits the shell with a status of N. If N is ommited, then exit";
 	write(STDOUT_FILENO, help, _strlen(help));
-	help = "statusis that of the last command executed\n";
+	help = "status of the last command executed\n";
 	write(STDOUT_FILENO, help, _strlen(help));
 }

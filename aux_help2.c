@@ -9,9 +9,9 @@ void aux_help(void)
 	char *help = "help: help [-dms] [pattern ...]\n";
 
 	write(STDOUT_FILENO, help, _strlen(help));
-	help = "\tDisplay information about builtin commands.\n ";
+	help = "\tDisplay information about the builtin commands.\n ";
 	write(STDOUT_FILENO, help, _strlen(help));
-	help = "Displays brief summaries of builtin commands.\n";
+	help = "Display summaries of the builtin commands.\n";
 	write(STDOUT_FILENO, help, _strlen(help));
 }
 /**
@@ -35,6 +35,6 @@ void aux_help_cd(void)
 	char *help = "cd: cd [-L|[-P [-e]] [-@]] [dir]\n";
 
 	write(STDOUT_FILENO, help, _strlen(help));
-	help = "\tChange the shell working directory.\n ";
+	help = "\tChange the  working directory of the shell.\n ";
 	write(STDOUT_FILENO, help, _strlen(help));
 }
