@@ -1,0 +1,59 @@
+.TH "MagMo Shell" "1" "August 29, 2024" "v1.0" "MagMo Shell"
+.SH NAME
+MagMosh \- a simple, interactive shell program
+.SH SYNOPSIS
+.B MagMosh
+[\fIoptions\fR]
+.SH DESCRIPTION
+MagMosh is a simple, interactive shell program that allows users to execute commands, navigate the file system, and manage processes within a UNIX-like environment.
+
+This shell provides basic functionalities such as running commands, handling input/output redirection, and managing background processes.
+.SH OPTIONS
+.TP
+.B \-h, \-\-help
+Display help information about MagMosh.
+
+.TP
+.B \-v, \-\-version
+Display the version of MagMosh.
+
+.TP
+.B \-c COMMAND
+Execute the specified command and then exit.
+
+.TP
+.B \-s, \-\-script FILE
+Execute the commands from the specified script file.
+
+.TP
+.B \-\-no\-history
+Disable command history for the session.
+
+.SH EXAMPLES
+.PP
+Start MagMosh in interactive mode:
+.PP
+.B $ MagMosh
+.PP
+Run a single command and then exit:
+.PP
+.B $ MagMosh \-c "ls -l"
+.PP
+Run commands from a script file:
+.PP
+.B $ MagMosh \-s myscript.sh
+.PP
+Start MagMosh without saving command history:
+.PP
+.B $ MagMosh \-\-no\-history
+.SH SEE ALSO
+.BR bash (1),
+.BR sh (1),
+.BR zsh (1).
+.SH AUTHOR
+Written by Moses Aboiyar and Margret Ajayi.
+.SH COPYRIGHT
+Copyright 2024 Moses Aboiyar and Margret Ajayi.
+
+This project was developed as part of the ALX Software Engineering program.
+
