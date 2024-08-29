@@ -3,7 +3,7 @@
 /**
  * cmp_env_name - compares env variables names
  * with the name passed.
- * @nenv: name of the environment variable
+ * @nenv: name of the environment variable.
  * @name: name passed
  *
  * Return: 0 if are not equal. Another value if they are.
