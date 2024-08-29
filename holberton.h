@@ -103,7 +103,7 @@ void free_rvar_list(r_var **head);
 
 /* aux_str functions */
 char *_strcat(char *dest, const char *src);
-char *strcpy(char *dest, char *src);
+char *_strcpy(char *dest, char *src);
 int _strcmp(char *s1, char *s2);
 char *_strchr(char *s, char c);
 int _strspn(char *s, char *accept);
